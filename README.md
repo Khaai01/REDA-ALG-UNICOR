@@ -1,5 +1,5 @@
-REDA-ALG-UNICOR
-Asesor Franklin Martinez
-Desarrollador
-Datos
-m
+#REDA-ALG-UNICOR
+#Asesor Franklin Martinez
+#Desarrollador
+#Analista
+#Analista
