@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
         <a href="matecialComplementario.html">matecialComplementario</a>
     </nav>
 </body>
-</html>
+</html> -->
+### El contenido anterior en commentario, no debe ir en este archivo. Este aaachivo debe contener el nombre del proyeto, breve descripcion del proyecto, proposito del proyeto, a quienes va direigido, nombe de los integrantes del grupo con su respetivo rol de cada uno Ej:
+### Franklin Martinez Avila Assor
 
-</html>
