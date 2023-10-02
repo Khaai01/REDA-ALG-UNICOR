@@ -2,26 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
         form{
             background-color: aquamarine;
-            border-radius: 5px;
+            border-radius: 5px ;
             height: 2000px;
             width: 80%;
             color: black;
         }
-    
     </style>
 </head>
 <body>
     <center>
-        <form action=""></form>
-        digite propiedad a buscar: <input type="search" name="buscar" id="buscar"><input
-        <button> buscar </button>
+        <form action="">
+            <br>
+            Digite Propiedad a Buscar :<input type="search" name="buscar" id="buscar" autofocus >
+            <br>
+            <br>
+            Digite La Url de su Sitio:<input type="url" id="url">
+            <br>
+            <br>
+            Digite su Cuenta de Correo: <input type="email" id="correo">
+            <br>
+            <br>
+            Digite su Edad: <input type="number" min="0" max="120" step="10" value="50">
+            <br>
+            <br>
+            Seleccion La Edad: <input type="range" min="0" max="100" step="10" value="50">
+            <br>
+            <br>
+            Fecha de Nacimiento: <input type="date" id="anioNac">
+            <br>
+            <br>
+            seleccione Mes:<input type="month">
+            <br>
+            <br>
+            Seleccione La Semana; <input type="week">
+            <br>
+            <br>
+            Seleccione la Asignatura: 
+            <select name="asig" id="asig">
+                <option value="Matematicas">Matematicas</option>
+                <option value="Fotografia">Fotografia</option>
+                <option value="Robotica">Robotica</option>
+            </select>
+            <br>
+            <br>
+            Seleccione Color:  <input type="color">
+            <br>
+            <br>
+            Digite sus Nombres: <input type="text" name="nom" id="nom" placeholder="Escriba Aqui el Nombre" required >
+            <br>
+            <br>
+            Escriba URl: 
+            <input type="url" name="diario" list="sugerencias"> 
+            <datalist id="sugerencias">
+                <option label="La Nación" value="http://www.lanacion.com.ar"></option>
+                <option label="Clarín" value="http://www.clarin.com"></option>
+                <option label="Página 12" value="http://www.pagina12.com.ar"></option>
+                <option label="Infobae" value="http://www.infobae.com"></option>
+            </datalist>
+            <br>
+            <br>
+            <button>Buscar</button>
+        </form>
     </center>
-    
 </body>
 </html>
