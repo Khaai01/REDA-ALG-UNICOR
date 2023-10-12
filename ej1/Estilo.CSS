@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(99, 159, 170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container {
+    margin: 150px auto;
+    width: 700px;
+}
+table {
+background-color: white;
+text-align: left;
+border-collapse: collapse;
+width: 70%;
+margin-left: 15%;
+margin-top: 10%;
+}
+th,
+td {
+    padding: 20px;
+}
+thead {
+    background-color: darkslategrey;
+    border-bottom: solid 5px cyan;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: gray;
+}
+tr:hover td {
+    background-color: aquamarine;
+    color: white;
+}
