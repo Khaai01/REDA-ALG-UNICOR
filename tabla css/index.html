@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>InformaticaWeb</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #4d7c77;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(254, 255, 255);
+}
+
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; 
+    background: #1dbb84;
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #2eebaf;
+    height: 300px; 
+}
+
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+footer {
+    background-color: #3df875;
+    padding: 10px;
+    text-align: center;
+    color: rgb(246, 246, 246);
+}
+
+
+@media (max-width: 600px) {
+    nav, article {
+    width: 100%;
+    height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h2>informatica</h2>
+</header>
+
+<section>
+    <nav>
+    <ul>
+        <li><a href="hardware.html">hardware</a></li>
+        <li><a href="software.html">software</a></li>
+        <li><a href="programacion.html">programacion</a></li>
+    </ul>
+    </nav>
+    
+    <article>
+    <h1>informatica</h1>
+    <p>La informática es la disciplina que se ocupa del estudio y desarrollo de sistemas para el tratamiento automático de la información, utilizando principalmente la computadora.</p>
+    <p>La informática abarca desde el diseño de algoritmos hasta la implementación de software y el funcionamiento de hardware. Incluye áreas como la programación, la inteligencia artificial, las redes de computadoras y la seguridad informática. Esencialmente, se centra en el procesamiento de información mediante tecnologías computacionales.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Derechos reservados</p>
+</footer>
+
+</body>
+</html>
