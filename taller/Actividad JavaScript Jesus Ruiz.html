@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid rgb(247, 245, 245);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular nota final
+    <script>
+        var nombre = prompt("Ingrese el nombre del estudiante:");
+        var apellido = prompt("Ingrese el apellido del estudiante:");
+        var nota1 = parseFloat(prompt("Ingrese la Nota 1:"));
+        var nota2 = parseFloat(prompt("Ingrese la Nota 2:"));
+        var nota3 = parseFloat(prompt("Ingrese la Nota 3:"));
+
+        var notaFinal = (nota1 + nota2 + nota3) / 3;
+        var comentario = "";
+        if (notaFinal < 2.0) {
+            comentario = "Insuficiente";
+        } else if (notaFinal >= 2.0 && notaFinal < 3.0) {
+            comentario = "Deficiente";
+        } else if (notaFinal >= 3.0 && notaFinal < 3.5) {
+            comentario = "Bueno";
+        } else if (notaFinal >= 3.5 && notaFinal < 4.0) {
+            comentario = "Aceptable";
+        } else if (notaFinal >= 4.0 && notaFinal < 4.5) {
+            comentario = "Excelente";
+        } else {
+            comentario = "Sobresaliente";
+        }
+
+        document.write("<h2>Resultados:</h2>");
+        document.write("<table>");
+        document.write("<tr><th>Nombre</th><th>Apellido</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th><th>Nota Final</th></tr>");
+        document.write("<tr>");
+        document.write("<td>" + nombre + "</td>");
+        document.write("<td>" + apellido + "</td>");
+        document.write("<td>" + nota1 + "</td>");
+        document.write("<td>" + nota2 + "</td>");
+        document.write("<td>" + nota3 + "</td>");
+        document.write("<td>" + notaFinal.toFixed(2) + " - " + comentario + "</td>");
+        document.write("</tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>
+
