@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora y Gráfico de Autonomía de Batería Tesla</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        canvas {
-            max-width: 600px;
-            margin: 20px auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .box {
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 10px 0;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
-    <h1>Calculadora de Autonomía de Batería Tesla</h1>
-    <label for="capacidadBateria">Capacidad de la Batería (kWh):</label>
-    <input type="number" id="capacidadBateria" placeholder="Ingrese la capacidad de la batería" step="0.01">
-    <button onclick="calcularAutonomia()">Calcular Autonomía</button>
-    <p id="resultado"></p>
 
-    <canvas id="graficoAutonomia"></canvas>
+  <div class="container">
+    <header>
+      <h1>Mi Página Web</h1>
+    </header>
 
-    <script>
-        function calcularAutonomia() {
-            var capacidadBateria = parseFloat(document.getElementById("capacidadBateria").value);
+    <main>
+      <div class="box">
+        <h2>Contenido Principal</h2>
+        <p>Este es un ejemplo de contenido principal.</p>
+      </div>
 
-            if (isNaN(capacidadBateria)) {
-                alert("Por favor, ingrese un valor válido para la capacidad de la batería.");
-                return;
-            }
+      <div class="box">
+        <h2>Otro Contenido</h2>
+        <p>Aquí hay más contenido para mostrar.</p>
+      </div>
+    </main>
 
-            var autonomiaEstimada = capacidadBateria * 3;
+    <footer>
+      <p>&copy; 2023 Mi Página Web</p>
+    </footer>
+  </div>
 
-            document.getElementById("resultado").innerHTML = "Autonomía Estimada: " + autonomiaEstimada.toFixed(2) + " millas";
-
-            actualizarGrafico(capacidadBateria, autonomiaEstimada);
-        }
-
-        function actualizarGrafico(capacidad, autonomia) {
-            var ctx = document.getElementById('graficoAutonomia').getContext('2d');
-
-            var datos = {
-                labels: ['Capacidad de la Batería (kWh)', 'Autonomía Estimada (millas)'],
-                datasets: [{
-                    label: 'Relación entre Capacidad y Autonomía',
-                    data: [capacidad, autonomia],
-                    backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(255, 99, 132, 0.2)'],
-                    borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)'],
-                    borderWidth: 1
-                }]
-            };
-
-            var opciones = {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            };
-
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: datos,
-                options: opciones
-            });
-        }
-    </script>
 </body>
 </html>
+
