@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Anidado</title>
+</head>
+<body>
+    <center>
+        <br>
+        <h1>Aplicacion encuantra el Mayor de 3 Numeros</h1>
+        <hr noshade="noshade" size="3" color="red" width="80%">
+        <br>
+        <table border="3" style="background-color: burlywood;">
+            <th>Variables</th>
+            <th>Valor</th>
+            <tbody>
+                <tr>
+                    <td>Numero A:</td>
+                    <td><input type="text" id="nA" placeholder="Digite un Numero" autofocus></td>
+                </tr>
+                <tr>
+                    <td>Numero B:</td>
+                    <td><input type="text" id="nB" placeholder="Digite un Numero"></td>
+                </tr>
+                <tr>
+                    <td>Numero C:</td>
+                    <td><input type="text" id="nC" placeholder="Digite un Numero"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="3" style="background-color: burlywood;">
+            <tr>
+                <td>
+                    <button onclick="encontrarMayor()">Encontrar Mayor</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2>Listado de Numeros Ingresados y el Mayor</h2>
+        <br>
+        <table border="3" style="background-color: burlywood;" >
+          <th>Numero A</th>
+          <th>Numero B</th>
+          <th>Numero C</th>
+          <th>Mayor</th>
+          <tbody id="cuerpo"></tbody>
+        </table>
+    </center>
+</body>
+<script src="ej4.js"></script>
+</html>
