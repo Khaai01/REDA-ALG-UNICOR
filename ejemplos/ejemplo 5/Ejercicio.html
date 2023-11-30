@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Calificaciones</h1></center>
+    <br><br>
+    <center><table border="3" style="background-color: rgb(62, 150, 11);">
+        <tr>
+            <td>Apellido</td>
+            <td><input type="text" id="nombre" placeholder="Digite el Nombre" autofocus></td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" id="apellido" placeholder="Digite el Apellido" autofocus></td>
+        </tr>
+        <tbody>
+            <th>Calificacion</th>
+            <th>Valor de la Calificacion</th>
+            <tr>
+                <td>Digite su primera Calificacion</td>
+                <td><input type="text" id="nota1" placeholder="Primera Calificacion" autofocus></td>
+            </tr>
+            <tr>
+                <td>Digite su segunda Calificacion</td>
+                <td><input type="text" id="nota2" placeholder="Segunda Calificacion"></td>
+            </tr>
+            <tr>
+                <td>Digite su tercera Calificacion</td>
+                <td><input type="text" id="nota3" placeholder="Tercera Calificacion"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="3" style="background-color: rgb(62, 150, 11);">
+        <tr>
+            <td>
+                <button onclick="calificacion()">Mirar Calificacion</button>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>Calificacion cualitativa y cuantitativa del estudiante</h2>
+    <h3>Calificaciones</h3>
+    <table border="3" style="background-color: rgb(62, 150, 11);">
+        <th>Nombre del estudiante</th>
+        <th>Apellido del estudiante</th>
+        <th>Primera Calificacion</th>
+        <th>Segunda Calificacion</th>
+        <th>Tercera Calificacion</th>
+        <th>Promedio final</th>
+        <th>Valoracion</th>
+        <th>Rendimiento</th>
+        <tbody id="cuerpo"></tbody> 
+    </table>
+</center>
+</body>
+<script src="ejercicio.js"></script>
+</html>

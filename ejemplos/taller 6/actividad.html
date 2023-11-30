@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>Ejercicio con condicionales</title>
+    <script>
+    function mostrarMensaje() {
+    var numero = document.getElementById("numero").value;
+    var mensaje = "";
+    if (numero == 0) {
+    mensaje = "cero";
+} else if (numero == 1) {
+    mensaje = "uno";
+} else if (numero == 2) {
+    mensaje = "dos";
+} else if (numero == 3) {
+    mensaje = "tres";
+} else if (numero == 4) {
+    mensaje = "cuatro";
+} else if (numero == 5) {
+    mensaje = "cinco";
+} else if (numero == 6) {
+    mensaje = "seis";
+} else if (numero == 7) {
+    mensaje = "siete";
+} else if (numero == 8) {
+    mensaje = "ocho";
+} else if (numero == 9) {
+    mensaje = "nueve";
+} else if (numero == 10) {
+    mensaje = "diez";
+}
+        document.getElementById("resultado").innerHTML = mensaje;
+    }
+</script>
+</head>
+<body>
+<h2>número del 0 al 10</h2>
+<select id="numero" onchange="mostrarMensaje()">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+
+</select>
+<p id="resultado"></p>
+</body>
+</html>
