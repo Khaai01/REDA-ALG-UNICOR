@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Números a Letras</title>
+</head>
+<body>
+    <label for="numero">Ingrese un número del 0 al 10:</label>
+    <input type="number" id="numero" min="0" max="10" required>
+    <button onclick="convertirNumero()">Convertir</button>
+
+    <table id="tablaResultado">
+    <tr>
+        <th>Número</th>
+        <th>Letra</th>
+    </tr>
+    </table>
+
+    <script>
+    function convertirNumero() {
+        var numeroInput = document.getElementById('numero');
+        var numero = parseInt(numeroInput.value);
+
+        if (!isNaN(numero) && numero >= 0 && numero <= 10) {
+        var letras = ['Cero', 'Uno', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis', 'Siete', 'Ocho', 'Nueve', 'Diez'];
+        var letra = letras[numero];
+
+        var tabla = document.getElementById('tablaResultado');
+        var fila = tabla.insertRow(-1);
+
+        var celdaNumero = fila.insertCell(0);
+        var celdaLetra = fila.insertCell(1);
+
+        celdaNumero.textContent = numero;
+        celdaLetra.textContent = letra;
+
+        // Asignar colores diferentes a cada número
+        switch (numero) {
+            case 0:
+            fila.style.color = '#3498db'; // Azul
+            break;
+            case 1:
+            fila.style.color = '#e74c3c'; // Rojo
+            break;
+            case 2:
+            fila.style.color = '#2ecc71'; // Verde
+            break;
+            case 3:
+            fila.style.color = '#f39c12'; // Amarillo
+            break;
+            case 4:
+            fila.style.color = '#9b59b6'; // Morado
+            break;
+            case 5:
+            fila.style.color = '#34495e'; // Gris oscuro
+            break;
+            case 6:
+            fila.style.color = '#1abc9c'; // Turquesa
+            break;
+            case 7:
+            fila.style.color = '#e67e22'; // Naranja
+            break;
+            case 8:
+            fila.style.color = '#95a5a6'; // Gris claro
+            break;
+            case 9:
+            fila.style.color = '#d35400'; // Zanahoria
+            break;
+            case 10:
+            fila.style.color = '#27ae60'; // Verde esmeralda
+            break;
+            default:
+            break;
+        }
+        } else {
+        alert('Ingrese un número válido del 0 al 10.');
+        }
+    }
+    </script>
+</body>
+</html>

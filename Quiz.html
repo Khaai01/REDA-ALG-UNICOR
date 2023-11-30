@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Números a Letras</title>
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    input, button {
+      margin: 10px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Conversor de Números a Letras</h2>
+
+  <form id="numeroForm">
+    <label for="numero">Ingrese un número del 0 al 10:</label>
+    <input type="number" id="numero" name="numero" min="0" max="10" required>
+    <button type="button" onclick="convertirNumero()">Convertir</button>
+  </form>
+
+  <table id="tablaResultado">
+    <tr>
+      <th>Número</th>
+      <th>Letra</th>
+    </tr>
+  </table>
+
+  <script>
+    function convertirNumero() {
+      // Obtener el número ingresado
+      var numero = document.getElementById('numero').value;
+
+      // Validar que el número esté en el rango correcto
+      if (numero >= 0 && numero <= 10) {
+        // Array con las letras correspondientes
+        var letras = ['Cero', 'Uno', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis', 'Siete', 'Ocho', 'Nueve', 'Diez'];
+
+        // Obtener la letra correspondiente al número
+        var letra = letras[numero];
+
+        // Obtener la tabla y añadir una nueva fila
+        var tabla = document.getElementById('tablaResultado');
+        var fila = tabla.insertRow(-1);
+
+        // Añadir celdas con el número y la letra
+        var celdaNumero = fila.insertCell(0);
+        var celdaLetra = fila.insertCell(1);
+
+        // Establecer el contenido de las celdas
+        celdaNumero.textContent = numero;
+        celdaLetra.textContent = letra;
+
+        // Asignar colores diferentes a cada fila
+        fila.style.backgroundColor = (numero % 2 === 0) ? '#e74c3c' : '#2ecc71'; "#"
+      } else {
+        alert('Ingrese un número válido del 0 al 10.');
+      }
+    }
+  </script>
+</body>
+</html>
