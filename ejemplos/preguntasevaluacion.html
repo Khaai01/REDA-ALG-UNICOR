@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Evaluación sobre Tesla Modelo 3</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+<body>
+   <section class="section container">
+      <h1 class="title">Explorando conocimientos sobre Tesla Modelo 3</h1>
+         <article class="panel">
+           <p class="panel-heading">1. ¿Cuál es la autonomía estimada del Tesla Modelo 3?</p>
+           <a class="panel-block" onclick="seleccionar(this)">250 km</a>
+           <a class="panel-block" onclick="seleccionar(this)">400 km</a>
+           <a id="correcta" class="panel-block" onclick="seleccionar(this)">500 km</a>
+           <a class="panel-block" onclick="seleccionar(this)">700 km</a>
+           <p id="mensaje" class="panel-block"></p>
+         </article>
+   <article class="panel">
+      <p class="panel-heading">2. ¿Cuánto tiempo se estima que tarda en cargarse completamente un Tesla Modelo 3 en un cargador rápido?</p>
+      <a class="panel-block" onclick="seleccionar1(this)">1 hora</a>
+      <a id="correcta1" class="panel-block" onclick="seleccionar1(this)">30 minutos</a>
+      <a class="panel-block" onclick="seleccionar1(this)">2 horas</a>
+      <a class="panel-block" onclick="seleccionar1(this)">4 horas</a>
+      <p id="mensaje1" class="panel-block"></p>
+   </article>
+      <article class="panel">
+         <p class="panel-heading">3. ¿Cuál es una característica destacada del sistema de piloto automático del Tesla Modelo 3?</p>
+         <a class="panel-block" onclick="seleccionar2(this)">Solo funciona en carreteras rectas</a>
+         <a id="correcta2" class="panel-block" onclick="seleccionar2(this)">Capacidad de cambio de carril automático</a>
+         <a class="panel-block" onclick="seleccionar2(this)">Solo funciona de día</a>
+         <a class="panel-block" onclick="seleccionar2(this)">Requiere supervisión constante del conductor</a>
+         <p id="mensaje2" class="panel-block"></p>
+      </article>
+         <article class="panel">
+            <p class="panel-heading">4. ¿Cuál es el material predominante en la construcción de la carrocería del Tesla Modelo 3?</p>
+            <a class="panel-block" onclick="seleccionar3(this)">Aluminio</a>
+            <a id="correcta3" class="panel-block" onclick="seleccionar3(this)">Acero</a>
+            <a class="panel-block" onclick="seleccionar3(this)">Fibra de carbono</a>
+            <a class="panel-block" onclick="seleccionar3(this)">Plástico</a>
+            <p id="mensaje3" class="panel-block"></p>
+         </article>
+         <article class="panel">
+            <p class="panel-heading">5. ¿Qué sistema operativo utiliza la pantalla táctil del Tesla Modelo 3?</p>
+            <a class="panel-block" onclick="seleccionar4(this)">Windows</a>
+            <a class="panel-block" onclick="seleccionar4(this)">iOS</a>
+            <a id="correcta4" class="panel-block" onclick="seleccionar4(this)">Linux</a>
+            <a class="panel-block" onclick="seleccionar4(this)">Android</a>
+            <p id="mensaje4" class="panel-block"></p>
+         </article>
+         <article class="panel">
+            <p class="panel-heading">6. ¿Cuál es la velocidad máxima del Tesla Modelo 3 en el modo Ludicrous?</p>
+            <a class="panel-block" onclick="seleccionar5(this)">200 km/h</a>
+            <a class="panel-block" onclick="seleccionar5(this)">250 km/h</a>
+            <a id="correcta5" class="panel-block" onclick="seleccionar5(this)">261 km/h</a>
+            <a class="panel-block" onclick="seleccionar5(this)">280 km/h</a>
+            <p id="mensaje5" class="panel-block"></p>
+         </article>
+         <article class="panel">
+            <p class="panel-heading">7. ¿Qué tecnología utiliza el sistema de carga inalámbrica del Tesla Modelo 3?</p>
+            <a class="panel-block" onclick="seleccionar6(this)">Bluetooth</a>
+            <a class="panel-block" onclick="seleccionar6(this)">NFC</a>
+            <a id="correcta6" class="panel-block" onclick="seleccionar6(this)">Inducción magnética</a>
+            <a class="panel-block" onclick="seleccionar6(this)">Infrarrojo</a>
+            <p id="mensaje6" class="panel-block"></p>
+         </article>
+         <article class="panel">
+            <p class="panel-heading">8. ¿Qué programa de asistencia al conductor ofrece el Tesla Modelo 3 para prevenir colisiones?</p>
+            <a class="panel-block" onclick="seleccionar7(this)">Climatizador automático</a>
+            <a id="correcta7" class="panel-block" onclick="seleccionar7(this)">Frenado de emergencia automático</a>
+            <a class="panel-block" onclick="seleccionar7(this)">Control de crucero adaptativo</a>
+            <a class="panel-block" onclick="seleccionar7(this)">Asistente de estacionamiento</a>
+            <p id="mensaje7" class="panel-block"></p>
+         </article>
+         <article class="panel">
+            <p class="panel-heading">9. ¿Qué tipo de conectividad a internet ofrece el Tesla Modelo 3?</p>
+            <a class="panel-block" onclick="seleccionar8(this)">3G</a>
+            <a id="correcta8" class="panel-block" onclick="seleccionar8(this)">4G LTE</a>
+            <a class="panel-block" onclick="seleccionar8(this)">Wi-Fi</a>
+            <a class="panel-block" onclick="seleccionar8(this)">Satélite</a>
+            <p id="mensaje8" class="panel-block"></p>
+         </article>
+         <article class="panel">
+            <p class="panel-heading">10. ¿Qué capacidad de almacenamiento ofrece la opción de almacenamiento del Tesla Modelo 3?</p>
+            <a
+            <a class="panel-block" onclick="seleccionar9(this)">64 GB</a>
+            <a class="panel-block" onclick="seleccionar9(this)">128 GB</a>
+            <a class="panel-block" onclick="seleccionar9(this)">256 GB</a>
+            <a id="correcta9" class="panel-block" onclick="seleccionar9(this)">512 GB</a>
+            <p id="mensaje9" class="panel-block"></p>
+         </article>
+         <!-- Pregunta adicional sobre el Tesla Modelo 3 y educación -->
+         <article class="panel">
+            <p class="panel-heading">11. ¿Cómo podría el Tesla Modelo 3 ser utilizado como herramienta educativa para estudiantes de informática?</p>
+            <a class="panel-block" onclick="seleccionar10(this)">Ofreciendo cursos de programación integrados en su sistema</a>
+            <a class="panel-block" onclick="seleccionar10(this)">Simulando escenarios de conducción autónoma para prácticas de programación</a>
+            <a id="correcta10" class="panel-block" onclick="seleccionar10(this)">Explorando la tecnología de software utilizado en el piloto automático</a>
+            <a class="panel-block" onclick="seleccionar10(this)">Proporcionando lecciones de historia sobre la evolución de los vehículos eléctricos</a>
+            <p id="mensaje10" class="panel-block"></p>
+         </article>
+   </section>
+<script src="trabajo.js"></script>
+</body>
+</html>
