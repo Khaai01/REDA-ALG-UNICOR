@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ejemplo de Evaluación</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+<body>
+   <section class="section container">
+      <h1 class="title">Practicando Multiplicacion</h1>
+         <article class="panel">
+           <p class="panel-heading">¿Cuanto es 45*3?</p>
+           <a class="panel-block" onclick="seleccionar(this)">76</a>
+           <a class="panel-block" onclick="seleccionar(this)">125</a>
+           <a id="correcta" class="panel-block" onclick="seleccionar(this)">135</a>
+           <a class="panel-block" onclick="seleccionar(this)">403</a>
+           <p id="mensaje" class="panel-block"></p>
+         </article>
+   <article class="panel">
+      <p class="panel-heading">¿Cuanto es 123*46?</p>
+      <a class="panel-block" onclick="seleccionar1(this)">1836</a>
+      <a class="panel-block" onclick="seleccionar1(this)">3264</a>
+      <a class="panel-block" onclick="seleccionar1(this)">7474</a>
+      <a id="correcta1" class="panel-block" onclick="seleccionar1(this)">5658</a>
+      <p id="mensaje1" class="panel-block"></p>
+   </article>
+      <article class="panel">
+         <p class="panel-heading">¿Cuanto es 345*23?</p>
+         <a class="panel-block" onclick="seleccionar2(this)">10836</a>
+         <a class="panel-block" onclick="seleccionar2(this)">7934</a>
+         <a id="correcta2" class="panel-block" onclick="seleccionar2(this)">7935</a>
+         <a class="panel-block" onclick="seleccionar2(this)">5474</a>
+         <p id="mensaje2" class="panel-block"></p>
+      </article>
+         <article class="panel">
+            <p class="panel-heading">¿Cuanto es X*35=245?</p>
+            <a class="panel-block" onclick="seleccionar3(this)">5</a>
+            <a id="correcta3" class="panel-block" onclick="seleccionar3(this)">7</a>
+            <a class="panel-block" onclick="seleccionar3(this)">23</a>
+            <a class="panel-block" onclick="seleccionar3(this)">2</a>
+            <p id="mensaje3" class="panel-block"></p>
+         </article>
+            <article class="panel">   
+               <p class="panel-heading">¿Cuanto es X*12=24?</p>
+               <a class="panel-block" onclick="seleccionar4(this)">5</a>
+               <a class="panel-block" onclick="seleccionar4(this)">3</a>
+               <a class="panel-block" onclick="seleccionar4(this)">4</a>
+               <a id="correcta4" class="panel-block" onclick="seleccionar4(this)">2</a>
+               <p id="mensaje4" class="panel-block"></p>
+            </article>
+               <article class="panel">    
+                  <p class="panel-heading">¿Cuanto es X*11=121?</p>
+                  <a class="panel-block" onclick="seleccionar5(this)">23</a>
+                  <a class="panel-block" onclick="seleccionar5(this)">9</a>
+                  <a class="panel-block" onclick="seleccionar5(this)">10</a>
+                  <a id="correcta5" class="panel-block" onclick="seleccionar5(this)">11</a>
+                  <p id="mensaje5" class="panel-block"></p>
+               </article>
+                  <article class="panel">     
+                     <p class="panel-heading">¿Cuanto es X*3=279?</p>
+                     <a class="panel-block" onclick="seleccionar6(this)">78</a>
+                     <a id="correcta6" class="panel-block" onclick="seleccionar6(this)">93</a>
+                     <a class="panel-block" onclick="seleccionar6(this)">89</a>
+                     <a class="panel-block" onclick="seleccionar6(this)">56</a>
+                     <p id="mensaje6" class="panel-block"></p>
+                  </article>
+                     <article class="panel">     
+                        <p class="panel-heading">¿Cuanto es 28*45?</p>
+                        <a class="panel-block" onclick="seleccionar7(this)">1267</a>
+                        <a id="correcta7" class="panel-block" onclick="seleccionar7(this)">1260</a>
+                        <a class="panel-block" onclick="seleccionar7(this)">1348</a>
+                        <a class="panel-block" onclick="seleccionar7(this)">1376</a>
+                        <p id="mensaje7" class="panel-block"></p>
+                     </article>
+                        <article class="panel">     
+                           <p class="panel-heading">¿Cuanto es 93*3?</p>
+                           <a class="panel-block" onclick="seleccionar8(this)">267</a>
+                           <a class="panel-block" onclick="seleccionar8(this)">198</a>
+                           <a id="correcta8" class="panel-block" onclick="seleccionar8(this)">279</a>
+                           <a class="panel-block" onclick="seleccionar8(this)">237</a>
+                           <p id="mensaje8" class="panel-block"></p>
+                        </article>
+                           <article class="panel">     
+                              <p class="panel-heading">¿Cuanto es 61*46?</p>
+                              <a class="panel-block" onclick="seleccionar9(this)">2754</a>
+                              <a class="panel-block" onclick="seleccionar9(this)">2017</a>
+                              <a id="correcta9" class="panel-block" onclick="seleccionar9(this)">2806</a>
+                              <a class="panel-block" onclick="seleccionar9(this)">1834</a>
+                              <p id="mensaje9" class="panel-block"></p>
+                           </article>
+ <script src="trabajo.js"></script>
+</body>
+</html>
+
