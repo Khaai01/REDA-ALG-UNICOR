@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ejemplo de Evaluación</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+<body>
+   <section class="section container">
+      <h1 class="title">Explorando conocimientos</h1>
+         <article class="panel">
+           <p class="panel-heading">¿Cuál es la capital de Francia?</p>
+           <a class="panel-block" onclick="seleccionar(this)">Madrid</a>
+           <a class="panel-block" onclick="seleccionar(this)">Londres</a>
+           <a id="correcta" class="panel-block" onclick="seleccionar(this)">París</a>
+           <a class="panel-block" onclick="seleccionar(this)">Berlín</a>
+           <p id="mensaje" class="panel-block"></p>
+         </article>
+   <article class="panel">
+      <p class="panel-heading">¿En qué año se descubrió América?</p>
+      <a class="panel-block" onclick="seleccionar1(this)">1492</a>
+      <a class="panel-block" onclick="seleccionar1(this)">1776</a>
+      <a class="panel-block" onclick="seleccionar1(this)">1607</a>
+      <a id="correcta1" class="panel-block" onclick="seleccionar1(this)">1492</a>
+      <p id="mensaje1" class="panel-block"></p>
+   </article>
+      <article class="panel">
+         <p class="panel-heading">¿Quién escribió "Cien años de soledad"?</p>
+         <a class="panel-block" onclick="seleccionar2(this)">Mario Vargas Llosa</a>
+         <a class="panel-block" onclick="seleccionar2(this)">Julio Cortázar</a>
+         <a id="correcta2" class="panel-block" onclick="seleccionar2(this)">Gabriel García Márquez</a>
+         <a class="panel-block" onclick="seleccionar2(this)">Isabel Allende</a>
+         <p id="mensaje2" class="panel-block"></p>
+      </article>
+         <article class="panel">
+            <p class="panel-heading">¿Cuál es el elemento más abundante en la corteza terrestre?</p>
+            <a class="panel-block" onclick="seleccionar3(this)">Hierro</a>
+            <a id="correcta3" class="panel-block" onclick="seleccionar3(this)">Oxígeno</a>
+            <a class="panel-block" onclick="seleccionar3(this)">Silicio</a>
+            <a class="panel-block" onclick="seleccionar3(this)">Aluminio</a>
+            <p id="mensaje3" class="panel-block"></p>
+         </article>
+            <article class="panel">   
+               <p class="panel-heading">¿En qué año se estrenó la primera película de Star Wars?</p>
+               <a class="panel-block" onclick="seleccionar4(this)">1977</a>
+               <a class="panel-block" onclick="seleccionar4(this)">1983</a>
+               <a class="panel-block" onclick="seleccionar4(this)">1990</a>
+               <a id="correcta4" class="panel-block" onclick="seleccionar4(this)">1977</a>
+               <p id="mensaje4" class="panel-block"></p>
+            </article>
+               <article class="panel">    
+                  <p class="panel-heading">¿Cuál es la obra más famosa de Leonardo da Vinci?</p>
+                  <a class="panel-block" onclick="seleccionar5(this)">La última cena</a>
+                  <a class="panel-block" onclick="seleccionar5(this)">El nacimiento de Venus</a>
+                  <a class="panel-block" onclick="seleccionar5(this)">Guernica</a>
+                  <a id="correcta5" class="panel-block" onclick="seleccionar5(this)">La Mona Lisa</a>
+                  <p id="mensaje5" class="panel-block"></p>
+               </article>
+                  <article class="panel">     
+                     <p class="panel-heading">¿Quién fue el primer presidente de Estados Unidos?</p>
+                     <a class="panel-block" onclick="seleccionar6(this)">Thomas Jefferson</a>
+                     <a id="correcta6" class="panel-block" onclick="seleccionar6(this)">George Washington</a>
+                     <a class="panel-block" onclick="seleccionar6(this)">Abraham Lincoln</a>
+                     <a class="panel-block" onclick="seleccionar6(this)">John Adams</a>
+                     <p id="mensaje6" class="panel-block"></p>
+                  </article>
+                     <article class="panel">     
+                        <p class="panel-heading">¿Cuál es el río más largo del mundo?</p>
+                        <a class="panel-block" onclick="seleccionar7(this)">Amazonas</a>
+                        <a id="correcta7" class="panel-block" onclick="seleccionar7(this)">Nilo</a>
+                        <a class="panel-block" onclick="seleccionar7(this)">Yangtsé</a>
+                        <a class="panel-block" onclick="seleccionar7(this)">Misisipi</a>
+                        <p id="mensaje7" class="panel-block"></p>
+                     </article>
+                        <article class="panel">     
+                           <p class="panel-heading">¿Cuál es el planeta más grande del sistema solar?</p>
+                           <a class="panel-block" onclick="seleccionar8(this)">Tierra</a>
+                           <a class="panel-block" onclick="seleccionar8(this)">Júpiter</a>
+                           <a id="correcta8" class="panel-block" onclick="seleccionar8(this)">Júpiter</a>
+                           <a class="panel-block" onclick="seleccionar8(this)">Marte</a>
+                           <p id="mensaje8" class="panel-block"></p>
+                        </article>
+                           <article class="panel">     
+                              <p class="panel-heading">¿Cuál es la fecha de la Independencia de México?</p>
+                              <a class="panel-block" onclick="seleccionar9(this)">5 de mayo</a>
+                              <a class="panel-block" onclick="seleccionar9(this)">16 de septiembre</a>
+                              <a id="correcta9" class="panel-block" onclick="seleccionar9(this)">16 de septiembre</a>
+                              <a class="panel-block" onclick="seleccionar9(this)">20 de noviembre</a>
+                              <p id="mensaje9" class="panel-block"></script>
+<script src="trabajo.js"></script>
+</body>
+</html>
